@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitbuddy - AI Fitness Coach</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1> Fitbuddy</h1><p>Your AI Fitness Companion</p></header>
+<nav>
+<button onclick="showTab('workout')">Workout</button>
+<button onclick="showTab('diet')">Diet</button>
+<button onclick="showTab('ai')">AI Coach</button>
+</nav>
+<section id="workout" class="tab active">
+<h2>AI Workout Planner</h2>
+<select id="goal"><option>Weight Loss</option><option>Muscle Gain</option><option>Stay Fit</option></select>
+<button onclick="generateWorkout()">Generate Plan</button>
+<div id="workoutResult"></div>
+</section>
+<section id="diet" class="tab">
+<h2>Diet Tracker</h2>
+<input id="foodInput" placeholder="e.g. 2 idli, dal rice">
+<button onclick="addFood()">Add Food</button>
+<div id="dietResult"></div>
+<p>Total Calories: <span id="totalCal">0</span></p>
+</section>
+<section id="ai" class="tab">
+<h2>AI Coach Chat</h2>
+<div id="chatBox"></div>
+<input id="chatInput" placeholder="Ask: How to lose belly fat?">
+<button onclick="askAI()">Send</button>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
