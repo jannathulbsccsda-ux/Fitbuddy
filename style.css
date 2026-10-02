@@ -1,0 +1,9 @@
+body{font-family:Arial;background:#0f172a;color:#fff;margin:0;text-align:center}
+header{background:#1e293b;padding:20px}
+nav{display:flex;justify-content:center;gap:8px;padding:10px;background:#334155}
+nav button{padding:10px;border:none;border-radius:8px;background:#22d3ee;font-weight:bold}
+.tab{display:none;padding:20px;max-width:600px;margin:auto}
+.tab.active{display:block}
+input,select{padding:10px;margin:5px;border-radius:6px;border:none;width:70%}
+button{padding:10px;border-radius:6px;border:none;background:#22d3ee;font-weight:bold;margin:5px}
+#chatBox{height:200px;overflow:auto;background:#1e293b;border-radius:8px;padding:10px;text-align:left}
